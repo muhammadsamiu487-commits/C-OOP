@@ -25,7 +25,7 @@ namespace ConsoleApp6
             {
                 Console.Clear();
                 Console.WriteLine("----------------------------");
-                Console.WriteLine("   Shop Management System   ");
+                Console.WriteLine("- Shop Management  System  -");
                 Console.WriteLine("----------------------------");
                 Console.WriteLine("1.) Product Management");
                 Console.WriteLine("2.) Sell Products");
