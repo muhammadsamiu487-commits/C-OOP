@@ -56,5 +56,8 @@
     <Compile Include="Sale\SaleUI.cs" />
     <Compile Include="Shop.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

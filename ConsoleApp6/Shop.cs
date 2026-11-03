@@ -13,7 +13,7 @@ namespace ConsoleApp6
         private ProductUI _ProductUi = new ProductUI();
         private SaleUI _SaleUi = new SaleUI();
         private ProductService _ProductService = new ProductService();
-        public Shop()
+        public void CallMainMenu()
         {
             MainMenu();
         }
@@ -56,16 +56,19 @@ namespace ConsoleApp6
                 else if (Option == "4")
                 {
                     Console.Clear();
-
                     List<ProductModel> Products = _ProductService.Product_list();
-
-                    Console.WriteLine("-------- Low Stock Products --------");
-
+       
                     bool found = false;
+                    int k = 0;
                     foreach (var Product in Products)
                     {
                         if (Product.STOCK <= 5)
                         {
+                            k++;
+                            if (k == 1)
+                            {
+                                Console.WriteLine("-------- Low Stock Products --------");
+                            }
                             Console.WriteLine($"ID: {Product.ID} | Name: {Product.NAME} | Stock: {Product.STOCK}");
                             found = true;
                         }
@@ -76,11 +79,13 @@ namespace ConsoleApp6
                         Console.WriteLine("No low stock products found.");
                     }
 
-                    Console.WriteLine("\nPress any key to continue...");
+                    Console.WriteLine("Press any key to continue...");
                     Console.ReadKey();
                 }
                 else if (Option == "5")
                 {
+                    //Exit 
+                    Console.WriteLine();
                     break;
                 }
                 else

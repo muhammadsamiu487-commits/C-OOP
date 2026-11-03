@@ -83,7 +83,7 @@ namespace ConsoleApp6.Shop_Management
                     }
                     else
                     {
-                        Console.WriteLine("Product not added");
+                        Console.WriteLine("Product not added due to any wrong input in details of product");
                     }
                     Console.Write("Press something to continue ");
                     Console.ReadKey();
