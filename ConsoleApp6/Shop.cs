@@ -24,9 +24,9 @@ namespace ConsoleApp6
             while (true)
             {
                 Console.Clear();
-                Console.WriteLine("----------------------------");
-                Console.WriteLine("- Shop Management  System  -");
-                Console.WriteLine("----------------------------");
+                Console.WriteLine("------------------------------");
+                Console.WriteLine("-= Shop Management  System  =-");
+                Console.WriteLine("------------------------------");
                 Console.WriteLine("1.) Product Management");
                 Console.WriteLine("2.) Sell Products");
                 Console.WriteLine("3.) View Sales History");
