@@ -24,6 +24,10 @@ namespace ConsoleApp6.Shop_Management
             PRICE = Price;
             STOCK = Stock;
         }
+        public ProductModel( )
+        {
+       
+        }
 
         public override string ToString()
         {
